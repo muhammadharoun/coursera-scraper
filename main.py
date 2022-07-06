@@ -36,7 +36,6 @@ class CourseraScraper:
         return requests.get(url)
 
     def parse_courses(self):
-        
         return  {            
         'Name':'',
         'Url':'',
@@ -47,7 +46,7 @@ class CourseraScraper:
 
     def handle_scrap(self):
         return
-        
+
     def save_csv(self):
         with open('coursera.csv', 'a') as f:
             writer = csv.DictWriter(f, self.column_names)
